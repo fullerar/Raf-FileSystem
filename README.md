@@ -6,7 +6,7 @@ https://users.cs.jmu.edu/tjadenbc/Web/
 
 Your file system’s “partition”:
 
-- The entire “partition” that holds your file system will just be a regular binary file (of size 131,072 bytes) stored on stu. Define the following constants in your program:
+- The entire “partition” that holds your file system will just be a regular binary file (of size 131,072 bytes). Define the following constants in your program:
 - SECTOR_SIZE = 512 
 - NUM_SECTORS = 256
 
