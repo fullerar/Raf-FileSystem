@@ -26,3 +26,14 @@ Inodes:
   - Twenty-six 1-byte numbers indexing the data block(s) containing the file or directory’s data
 
 - Each inode block (512 bytes) can hold 16 inodes (32 bytes), and since there are nine inode blocks your file system can have at maximum of 144 inodes (and therefore a maximum of 144 total files and directories). Also note that since a file/directory can have at most 26 (512 bytes) data blocks, no file or directory can exceed 13KB in size.
+
+To check the .out file:
+  - open Terminal and go to the directory that has the .out file stored
+  - perform the following:
+    - hexdump -C yourFile.out
+  - the main class has several testing method calls to show a very basic view of what is happening internally. But to really see the bytes and what is where, you should run the command above.
+
+AUTHOR'S NOTE:
+  - This code is not perfect.
+  - This code does not conform to good coding practices. For example there are a lot of public static variables used for simplicity and to save time (This project was due just before finals and there was no requirement for good coding practices)
+  - The code functionality for File_Read/Write and Dir_Read/Seek are not fully correct. While they do perform some of the required functionality, it is on my todo list to make them more accurate. 
