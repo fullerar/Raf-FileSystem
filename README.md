@@ -10,7 +10,7 @@ Your file system’s “partition”:
 - SECTOR_SIZE = 512 
 - NUM_SECTORS = 256
 
-- Your “partition” contains NUM_SECTORS sectors and each sector contains SECTOR_SIZE bytes. The first sector in your partition should be the superblock. The format of the superblock is as follows:
+Your “partition” contains NUM_SECTORS sectors and each sector contains SECTOR_SIZE bytes. The first sector in your partition should be the superblock. The format of the superblock is as follows:
   • A 4-byte “magic number” – you may choose any 4-byte value you like to be your magic number.
   • A 4-byte number representing the size (in sectors) of the superblock – this should be 1.
   • A 4-byte number representing the number of sectors that contain inodes – this should be 9.
