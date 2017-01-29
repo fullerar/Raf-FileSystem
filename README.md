@@ -27,6 +27,12 @@ Inodes:
 
 - Each inode block (512 bytes) can hold 16 inodes (32 bytes), and since there are nine inode blocks your file system can have at maximum of 144 inodes (and therefore a maximum of 144 total files and directories). Also note that since a file/directory can have at most 26 (512 bytes) data blocks, no file or directory can exceed 13KB in size.
 
+To run the main class:
+  - open Terminal and go to the proper directory
+  - perform the following:
+    - make
+    - java main
+
 To check the .out file:
   - open Terminal and go to the directory that has the .out file stored
   - perform the following:
