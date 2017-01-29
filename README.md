@@ -1,6 +1,8 @@
 # Raf-FileSystem
 This simulates the inner workings of a file system by creating one inside of a random access file.
 
+The credit for the following summary goes to Dr. Brett Tjaden of James Madison Univeristy.
+https://users.cs.jmu.edu/tjadenbc/Web/
 
 Your file system’s “partition”:
 
@@ -16,7 +18,7 @@ Your file system’s “partition”:
 • A 144-byte array telling which inodes are free – initially all 144 bytes should be zero since all inodes are free.
 • A 246-byte array telling which data blocks are free – initially all 246 bytes should be zero since all data blocks are free.
 
-- Inodes:
+Inodes:
 - There will be one inode for each file and directory. Inodes are 32 bytes long, and they contain:
 • A 2-byte number representing whether or not the inode is free (0x0000) or in use (0x1111)
 • A 2-byte number representing whether the inode belongs to a file (0x2222) or a directory (0x3333)
